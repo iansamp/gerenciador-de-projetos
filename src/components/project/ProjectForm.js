@@ -9,20 +9,23 @@ export default function ProjectForm({ handleSubmit, btnText, ProjectData }){
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(ProjectData || {})
 
+
     useEffect(() => {
-        fetch("https://localhost:5000/categories", {
-            method:'GET',
+        fetch("http://localhost:5000/categories", {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
-            },
+            }
         })
-        
             .then((resp) => resp.json())
             .then((data) => {
                 setCategories(data)
+                
             })
-            .catch(err => console.error(err))
+            .catch(err => console.log(err))
     }, [])
+        
+    
 
     const submit = (e) => {
         e.preventDefault()
@@ -38,8 +41,8 @@ export default function ProjectForm({ handleSubmit, btnText, ProjectData }){
             ...project, 
             category: {
                 id: e.target.value,
-                name: e.target.options[e.target.selectIndex].text,
-            },
+                name: e.target.options[e.target.selectedIndex].text,
+            } 
         })
     }
 
@@ -51,7 +54,7 @@ export default function ProjectForm({ handleSubmit, btnText, ProjectData }){
             name="name"
             placeholder="Insira o nome do projeto"
             handleOnChange={handleChange}
-            value={project.name}
+            value={project.name ? project.name : ''}
             />
             <Input 
             type="number"
@@ -59,7 +62,7 @@ export default function ProjectForm({ handleSubmit, btnText, ProjectData }){
             name="budget"
             placeholder="Insira o orçamento total"
             handleOnChange={handleChange}
-            value={project.budget}
+            value={project.budget ? project.budget : ''}
             />
             <Select 
             name="category_id" 

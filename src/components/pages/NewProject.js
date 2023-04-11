@@ -5,23 +5,23 @@ import styles from './NewProject.module.css'
 export default function NewProject() {
     const history = useHistory()
 
-    function createPost(project) {
-        //initialize cost and services
+    function createPost(project){
+        // initialize cost and services
         project.cost = 0
         project.services = []
 
-        fetch('http://localhost:5000/projects',{
+        fetch("http://localhost:5000/projects", {
             method: 'POST',
-            headers: { 
+            headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(project),
         })
-            .then((resp) => resp.json()
+            .then((resp) => resp.json())
             .then((data) =>{
-                history.push('/projects',{message: 'Projeto criado com sucesso!'})
+                history.push('/projects', { message: 'Projeto criado com sucesso!'})
             })
-            ).catch(err => console.log(err))
+            .catch((error) => console.log(error))
     }
 
     return(
