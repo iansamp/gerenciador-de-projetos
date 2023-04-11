@@ -11,7 +11,7 @@ export default function ProjectForm({ handleSubmit, btnText, ProjectData }){
 
     useEffect(() => {
         fetch("https://localhost:5000/categories", {
-            method: 'GET',
+            method:'GET',
             headers: {
                 'Content-Type': 'application/json'
             },
