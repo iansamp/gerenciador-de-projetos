@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "projeto mk3",
-      "budget": "56419",
+      "name": "BOMBA PATCH23",
+      "budget": "2025",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
