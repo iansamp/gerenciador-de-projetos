@@ -32,7 +32,7 @@ export default function Project() {
                     setRemoveLoading(true)
                 })
                 .catch((err) => console.log(err))
-        }, 250)
+        }, 300)
     }, [])
 
     function removeProject(id){

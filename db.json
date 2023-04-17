@@ -1,37 +1,26 @@
 {
   "projects": [
     {
-      "name": "BOMBA PATCH23",
-      "budget": "2025",
+      "name": "SITE DE MAICON",
+      "budget": "50000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": 3
+      "id": 1
     },
     {
-      "name": "aaaaaaaaaaa",
-      "budget": "10000000000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": " kklklkk",
-      "budget": "454545",
+      "name": "asdasd",
+      "budget": "420000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
       "cost": 0,
       "services": [],
-      "id": 5
+      "id": 2
     }
   ],
   "categories": [
