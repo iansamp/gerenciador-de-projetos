@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import savings from '../../img/savings.svg'
+import savings from '../../img/cost-home-feature-768x631.png'
 import LinkButton from '../layout/LinkButton'
 
 export default function Home() {
