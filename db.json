@@ -23,11 +23,11 @@
       "id": 2
     },
     {
-      "name": "asaa",
-      "budget": "40000",
+      "name": "a",
+      "budget": "1",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
