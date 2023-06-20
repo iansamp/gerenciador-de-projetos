@@ -13,7 +13,7 @@
     },
     {
       "name": "asdasd",
-      "budget": "420000",
+      "budget": "42000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -32,6 +32,39 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "sla",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "\\\\asdds",
+      "budget": "77874",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "ykklyu",
+      "budget": "1244",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
